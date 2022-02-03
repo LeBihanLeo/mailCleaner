@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+/* Layout Styling */
+
+#result {
+    font-size: x-large;
+}
+
+#mailNumber {
+    font-size: xx-large;
+    color: green;
+    font-weight: bold;
+}
+
+.author {
+    font-weight: bold;
+    color: rgb(172, 44, 70);
+}
+
+.deleteMail {
+    white-space: nowrap;
+    text-align: justify;
+}
+
+#mailResult {
+    position: fixed;
+    left: 80vw;
+    top: 12vh;
+    width: 22vw;
+    height: 50vh;
+    max-height: 50vh;
+    font-size: 2vh;
+}
+
+.hideMails {
+    position: relative;
+    overflow: hidden;
+}
+
+.hideMails .fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, black);
+}
+
+li {
+    list-style: none;
+    line-height: 2em;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li.show {
+    height: 2em;
+    margin: 2px 0;
+}
+
+.swing li {
+    opacity: 0;
+    transform: rotateY(-90deg);
+    transition: all 0.5s cubic-bezier(.36, -0.64, .34, 1.76);
+}
+
+.swing li.show {
+    opacity: 1;
+    transform: none;
+    transition: all 0.5s cubic-bezier(.36, -0.64, .34, 1.76);
+}
+
+#read_Promotions {
+    background-color: rgba(218, 146, 146, 0.479)!important;
+}
+
+#promotions {
+    background-color: rgba(146, 218, 164, 0.479)!important;
+}
+
+#social {
+    background-color: rgba(146, 180, 218, 0.479)!important;
+}
+
+#forums {
+    background-color: rgba(218, 211, 146, 0.479)!important;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Button Styles */
+
+.button {
+    display: inline-flex;
+    height: 10vh;
+    width: 15vw;
+    border: 2px solid;
+    margin: 20px 20px 20px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2vh;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    color: #5c6161;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+/* Third Button */
+
+.button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.048);
+}
+
+.button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+#circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #554f4f2c;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+.button-3:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -100px;
+    left: -70px;
+}
+
+.button-3:hover a {
+    color: #2D3142;
+}

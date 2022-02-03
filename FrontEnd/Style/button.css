@@ -1,0 +1,54 @@
+.btn-bubble {
+    color: white;
+    background-color: #8ba75f;
+    background-repeat: no-repeat;
+}
+
+.btn-bubble:hover,
+.btn-bubble:focus {
+    -webkit-animation: bubbles 1s forwards ease-out;
+    animation: bubbles 1s forwards ease-out;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 9% 115% / 0.57em 0.57em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 108% 88% / 0.99em 0.99em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 84% 106% / 0.71em 0.71em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 10% 112% / 0.98em 0.98em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 108% 102% / 0.86em 0.86em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 89% 140% / 0.95em 0.95em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 81% 98% / 0.9em 0.9em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 33% 113% / 0.9em 0.9em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 27% 120% / 1.18em 1.18em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 88% 150% / 0.91em 0.91em, radial-gradient(circle at center, rgba(0, 0, 0, 0) 30%, #eeeeff 60%, #eeeeff 65%, rgba(0, 0, 0, 0) 70%) 55% 149% / 0.78em 0.78em;
+    background-color: #8ba75f;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes bubbles {
+    100% {
+        background-position: 10% -312%, 99% -400%, 83% -126%, 8% -373%, 100% 44%, 99% -104%, 73% -38%, 43% -212%, 27% -384%, 92% -12%, 65% -157%;
+        box-shadow: inset 0 -6.5em 0 #3379aa;
+    }
+}
+
+@keyframes bubbles {
+    100% {
+        background-position: 10% -312%, 99% -400%, 83% -126%, 8% -373%, 100% 44%, 99% -104%, 73% -38%, 43% -212%, 27% -384%, 92% -12%, 65% -157%;
+        box-shadow: inset 0 -6.5em 0 #3379aa;
+    }
+}
+
+.btn {
+    font-size: 3vh;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 2em;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 1%;
+}
+
+.btn:active {
+    animation: pulse 1.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
