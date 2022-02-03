@@ -36,7 +36,7 @@ function cleanV1(query) {
 
         if (nbMailDelete > 0) {
             addMailsDom(allSnippet);
-            nbMailDiv.innerHTML = "Congratulation you have delete <span id='mailNumber'>" + nbMailDelete + "</span> mails!!";
+            nbMailDiv.innerHTML = "Congratulation you have deleted <span id='mailNumber'>" + nbMailDelete + "</span> mails!!";
         } else
             nbMailDiv.innerHTML = nbMailDelete + " mails found :(";
     });
