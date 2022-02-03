@@ -13,7 +13,7 @@ function addListener() {
 }
 
 function authenticate() {
-    $.post("../Backend/Authentification/login.php", {}, function(data) {
+    $.post("./Backend/Authentification/login.php", {}, function(data) {
         let res = JSON.parse(data);
         document.location.href = res['redirect'];
     });
